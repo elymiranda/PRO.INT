@@ -12,8 +12,8 @@ Repositorio para a Disciplina de Programação para Internet
 * C++
 * Android
 * Java (Android)
-* SQL (MySQL, Postgresql)
-* DataBase (Firebase, Sugar ORM, ObjectBox)
+* Postgresql
+* Firebase, Sugar ORM, ObjectBox
 
 ### Interesses academicos e profissionais:
 * Processamento de imagens
