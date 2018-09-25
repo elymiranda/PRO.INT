@@ -23,10 +23,10 @@ Repositorio para a Disciplina de Programação para Internet
 * Games
 	
 ### Portifolio:
-* [Event's] (https://github.com/vikvik98/ProjetoEventos)
-* [Condominio] (https://github.com/vikvik98/Atividade-F)
-* [Jogo da forca] (https://github.com/vikvik98/Atividade-C)
-* [Bibliotech] (https://github.com/danielmessi13/POO-2017-DANIEL/tree/master/Projeto%20Android)
+* [Event's](https://github.com/vikvik98/ProjetoEventos)
+* [Condominio](https://github.com/vikvik98/Atividade-F)
+* [Jogo da forca](https://github.com/vikvik98/Atividade-C)
+* [Bibliotech](https://github.com/danielmessi13/POO-2017-DANIEL/tree/master/Projeto%20Android)
 
 ### Expectativa quanto a disciplina:
 * Entender e aplicar tecnologias de desenvolvimento para a internet no desenvolvimento de softwares dinâmicos para a web.
