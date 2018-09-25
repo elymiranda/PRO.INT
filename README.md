@@ -12,7 +12,7 @@ Repositorio para a Disciplina de Programação para Internet
 * C++
 * Android
 * Java (Android)
-* Postgresql
+* PostgreSQL
 * Firebase, Sugar ORM, ObjectBox
 
 ### Interesses academicos e profissionais:
