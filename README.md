@@ -4,7 +4,6 @@ Repositorio para a Disciplina de Programação para Internet
 ### Contato: 
 * Celular/WhatsApp/Telegram: (86) 9 9977-4227
 * Email: danielmessi13@hotmail.com
-* Github: danielmessi13
 * Discord: DanielMessias#8956
 
 ### Habilidades:
