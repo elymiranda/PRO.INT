@@ -16,7 +16,6 @@ Repositorio para a Disciplina de Programação para Internet
 * DataBase (Firebase, Sugar ORM, ObjectBox)
 
 ### Interesses academicos e profissionais:
-* Estudo de aptidões/problemas com relação com a impressão digital
 * Processamento de imagens
 * Tecnologia na educação infantil
 * Games
