@@ -8,8 +8,7 @@ Repositorio para a Disciplina de Programação para Internet
 
 ### Habilidades:
 * Python
-* C
-* C++
+* C/C++
 * Android
 * Java (Android)
 * PostgreSQL
