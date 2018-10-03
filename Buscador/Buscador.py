@@ -3,8 +3,6 @@ from bs4 import BeautifulSoup
 import re
 
 
-
-
 def main():
 
     url = input("Link: ")
@@ -26,6 +24,7 @@ def get_links(url, profundidade, palavra):
 
     if response is not None:
         if response.status_code == 200:
+
 
             soup = BeautifulSoup(response.text, "html.parser")
             a = soup.find_all("a")
