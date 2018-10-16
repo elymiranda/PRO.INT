@@ -1,0 +1,130 @@
+header{
+	font-size: 3vh; 
+	background-color: white;
+	width: 100%;
+	height: 5%;
+}
+
+h1{
+	font-size: 3vh;
+}
+
+
+header h1{
+	margin: 0;	
+	margin-left: 20%;
+	display: inline;
+}
+
+html, body{
+	height: 100%;
+	margin: 0;
+	background-color: gray;
+}
+
+#links{
+	display: inline;
+	float: right;
+	position: absolute;
+	right: 0;
+	margin-right: 20%;
+	font-size: 3vh; 
+}
+
+#conteudo{
+	display: inline-flex;
+	height: 80%;
+	padding: 10px;		
+	padding-left: 10%;
+}
+
+#rodape{
+	background-color: black;
+	height: 15%;
+}
+
+#rodape h1{
+	color: white;
+	text-align: center;
+	margin: 0;
+}
+
+.link-acesso{
+	width: 100%;
+	text-decoration: none;
+	color: black;
+	padding: 4px;
+}
+
+.link-acesso:hover{
+	color: blue;
+	border-bottom: 2px solid orange;
+}
+
+#postagens{
+	height: 90%;
+	width: 50%;
+	background-color: white;
+	overflow-y: auto;
+}
+
+#postagens a{
+	color: red;
+	text-decoration: none;
+	font-size: 1.8vh;
+}
+
+#postagens span{
+	font-size: 1.8vh;
+	color: gray;	
+}
+
+.card{
+	height: 32.4%;
+	position: relative;
+	border-bottom: 1px solid black;
+	padding: 5px;
+}
+
+.card h1{
+	margin: 0;
+}
+.card img{
+	width: 30%;
+	display: inline;
+	float: left;
+}
+
+#assinar-card{
+	font-size: 3vh;
+    float: left;
+    background: white;
+    height: 35%;
+    width: 100%;
+    padding: 5px;
+    text-align: center;
+}
+
+#redes-sociais{
+	margin-top: 5%;
+	float: left;
+    background: white;
+    height: 20%;
+    width: 100%;
+    padding: 5px;
+    text-align: center;
+}
+
+#propaganda{
+	margin-top: 5%;
+	float: left;
+    background: white;
+    height: 35%;
+    width: 100%;
+    padding: 5px;
+    text-align: center;
+}
+
+#redes-sociais img{
+	height: 20%;
+}
