@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+{% block body %}
+    <ul>
+        <li>Questão: {{questao_manage.question_text}}</li>
+        {% if questao_manage.closed %}
+            <li>Questão fechada //  <a href="{% url 'alterar_status' questao_manage.id %}">Alterar Status</a> </li>
+        {% else %}
+            <li>Questão aberta // <a href="{% url 'alterar_status' questao_manage.id %}">Alterar Status</a> </li>
+        {% endif %}
+        <li>Data de publicação: {{questao_manage.pub_date}}</li>
+    </ul>
+
+    <div style="text-align: center">
+        <h4>Escolhas:</h4>
+        {% if questao_manage.escolhas %}
+            {% for escolha in questao_manage.escolhas.all %}
+                <button class="btn">{{escolha}}</button> // <a href="{% url 'excluir_choice' questao_manage.id escolha.id %}" onclick="return confirm('Tem certeza disso?')" >Excluir</a>
+            {% endfor %}
+        {% endif %}
+
+        <h4>Escolhas sem questões: </h4>
+        {% if escolhas_nulas %}
+            {% for escolha in escolhas_nulas %}
+                <button class="btn">{{escolha}}</button> // <a href="{% url 'adicionar_choice' questao_manage.id escolha.id %}" onclick="return confirm('Tem certeza disso?')" >Adicionar</a>
+            {% endfor %}
+        {% endif %}
+
+        <h4>Relátorio dos horarios dos votos</h4>
+        {% if questao_manage.escolhas %}
+            {% for escolha in questao_manage.escolhas.all %}
+                <p>Escolha: {{escolha}}</p>
+                {% for voto in escolha.voto.all %}
+                    <p>Dia: {{voto.vote_date}}}</p>
+                {% endfor %}
+            {% endfor %}
+        {% endif %}
+    </div>
+{% endblock %}

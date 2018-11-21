@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block body %}
+    <ul>
+        <h2>Questão: {{questao_resultado.question_text}}</h2>
+        {% if questao_resultado.escolhas %}
+            {% for escolha in questao_resultado.escolhas.all %}
+                <li>Escolha: {{escolha.choice_text}} //
+                    Quantidade de votos: {{escolha.voto.count}} //
+                    Percentual: {{escolha.percentual}}%
+
+                </li>
+            {% endfor %}
+        {% endif %}
+    </ul>
+{% endblock %}
