@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block body %}
+
+    <h1 style="text-align: center">Lista das questões cadastradas</h1>
+
+    {% if questoes %}
+        {% for questao in questoes %}
+        <ul>
+            <a href= "{% url 'question' questao.id %}"><button class="btn-block ">Texto da questão: {{questao.question_text}}</button></a>
+        </ul>
+        {% endfor %}
+    {% else %}
+        <h1>Vocẽ não tem questões!! </h1>
+    {% endif %}
+{% endblock %}

@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% block body %}
+    <ul>
+        <li>Questão: {{questao.question_text}}</li>
+        {% if questao.closed %}
+            <li>Questão fechada</li>
+        {% else %}
+            <li>Questão aberta</li>
+        {% endif %}
+        <li>Data de publicação: {{questao.pub_date}}</li>
+    </ul>
+
+    <div style="text-align: center">
+        <h4>Escolhas:</h4>
+        {% if questao.escolhas %}
+            {% for escolha in questao.escolhas.all %}
+                <a href="{% url 'votar' questao.id escolha.id %}"><button class="btn">{{escolha}}</button></a>
+            {% endfor %}
+        {% endif %}
+
+        <br/>
+        <br/>
+        <br/>
+        {% if questao.closed %}
+            <a href="{% url 'resultado' questao.id %}"><button class="btn">Resultado</button></a>
+        {% endif %}
+    </div>
+{% endblock %}
